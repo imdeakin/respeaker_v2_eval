@@ -21,7 +21,7 @@ def main():
 
     src = Source(rate=16000)
     ns = NS(rate=16000, channels=1)
-    kws = KWS(model='xiaoduxiaodu_all_10022017')
+    kws = KWS(model='xiaoduxiaodu_all_10022017',sensitivity=1)
     alexa = Alexa()
 
     src.pipeline(ns, kws, alexa)
