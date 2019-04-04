@@ -33,7 +33,7 @@ def main():
 
     src = Source(rate=16000)
     ns = NS(rate=16000, channels=1)
-    kws = KWS(model='alexa')
+    kws = KWS(model='xiaoduxiaodu_all_11272017',sensitivity=1)
     alexa = Alexa()
 
     alexa.state_listener.on_listening = pixel_ring.listen
